@@ -30,7 +30,6 @@ public class NoteBookControllerApi {
 	 */
 	@PostMapping("/execute")
 	public Result execute (@Valid @RequestBody Code code, HttpServletRequest request) { 
-		//TODO add validation for interpreter support
 		return noteBookService.execute(NoteBookUtils.extractDto(code, request.getRemoteAddr()));
 	}
 	
