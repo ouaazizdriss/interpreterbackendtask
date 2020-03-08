@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.oracle.challenge</groupId>
-	<artifactId>interpreter</artifactId>
+	<artifactId>NoteBookServer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>interpreter</name>
 	<description>Java / Spring Boot Notebook Server</description>
@@ -35,17 +35,21 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		 <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>2.9.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.9.2</version>
-        </dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.graalvm.sdk/graal-sdk -->
+		<dependency>
+		    <groupId>org.graalvm.sdk</groupId>
+		    <artifactId>graal-sdk</artifactId>
+		    <version>20.0.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.graalvm.truffle/truffle-api -->
+		<dependency>
+		    <groupId>org.graalvm.truffle</groupId>
+		    <artifactId>truffle-api</artifactId>
+		    <version>20.0.0</version>
+		</dependency>
+		
+		
 	</dependencies>
 
 	<build>
