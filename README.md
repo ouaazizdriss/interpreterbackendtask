@@ -30,7 +30,7 @@ The Note Book endpoint is '/execute'
 You can test it by sending a POST request to 'http://localhost:8080/execute'
 
 Examples:
-This example will use your IP as a session identifier.
+This example will use your IP as a session identifier. If for some reason your IP is not visible in the request the server will generate a session Id for you that you can use in you requests.
 ```
 {
   "code": "%python print(1+1)"
