@@ -23,3 +23,30 @@ $ mvn clean install -DskipTests
 ```
 
 The jar is in the target directory. You can execute it using 'java -jar' command.
+
+### Runing the endpoint
+
+The Note Book endpoint is '/execute'
+You can test it by sending a POST request to 'http://localhost:8080/execute'
+
+Examples:
+This example will use your IP as a session identifier.
+```
+{
+  "code": "%python print(1+1)"
+}
+```
+
+This example will use the session Id 'session-01'
+```
+{
+  "code": "%python print(1+1)",
+  "sessionId": "session-01"
+}
+```
+
+PS: don't forget to add this header to your request: 
+```
+Content-type: application/json
+
+```
